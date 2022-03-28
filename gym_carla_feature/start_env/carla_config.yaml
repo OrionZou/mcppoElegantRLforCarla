@@ -1,0 +1,33 @@
+number_of_vehicles: 0
+display_size: 256
+max_past_step: 4
+dt: 0.2
+action_type: 1
+discrete_acc:
+- -3.0
+- 0.0
+- 3.0
+discrete_steer:
+- -0.2
+- 0.0
+- 0.2
+continuous_accel_range: 1
+continuous_steer_range: 1
+ego_vehicle_filter: vehicle.lincoln*
+port: 2000
+town: Town03
+task_mode: fixed_route
+max_step: 1000
+max_waypt: 12
+obs_range: 32
+lidar_bin: 0.5
+d_behind: 12
+out_lane_thres: 2.0
+desired_speed: 8
+max_ego_spawn_times: 200
+display_route: true
+obs_space_type:
+- orgin_state
+- waypoint
+render: false
+autopilot: true
