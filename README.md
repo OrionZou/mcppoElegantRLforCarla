@@ -1,7 +1,7 @@
 # mcppoElegantRLforCarla
 There is the implementation of multi-constraint proximal policy optimization (MCPPO), which is modified based on a DRL framework -- [ElegantRL](https://github.com/AI4Finance-Foundation/ElegantRL)(小雅). The carla environment is modified based on [gym-carla](https://github.com/cjy1992/gym-carla). 
 
-![alt text](/images\town07-part.gif "town07")
+![alt text](images\town07-part.gif "town07")
 
 ## Get started
 
@@ -50,4 +50,3 @@ The tensorboard file and model file will be saved in ```./veh_control_logs```
 
 ## Thanks 
 Thanks for [小雅](https://github.com/AI4Finance-Foundation/ElegantRL) and [Yinyan Zeng](https://github.com/Yonv1943), the author. I learned a lot from this repository. 
-Thanks for the and the author 
