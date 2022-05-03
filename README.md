@@ -27,11 +27,11 @@ bash ./start/carla_veh_control_run.sh
 ```
 or start with 
 ```
-python ./gym_carla_feature/start_env/demo/veh_control.py
+python gym_carla_feature/start_env/demo/veh_control.py
 ```
 You also use ray_elegantrl to try other envs such as
 ```
-python ./ray_elegantrl/demo.py
+python ray_elegantrl/demo.py
 ```
 ### Evaluation
 The tensorboard file and model file will be saved in ```./veh_control_logs```
