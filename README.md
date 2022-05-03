@@ -19,6 +19,11 @@ Please see requirements.txt
 ```
 pip install -r requirements.txt
 ```
+You can run PID control to test 
+```
+python gym_carla_feature/start_env/demo/rule_demo.py
+```
+to test if carla is installed correctly.
 ### Training
 
 After runing carla server, you can start a quickstart shell
