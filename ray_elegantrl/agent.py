@@ -6,8 +6,6 @@ import numpy.random as rd
 import random
 from copy import deepcopy
 from ray_elegantrl.net import *
-from ray_elegantrl.intrinsic_reward import IReward
-from scipy.optimize import minimize
 
 # from IPython import embed
 

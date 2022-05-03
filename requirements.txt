@@ -1,0 +1,15 @@
+# python3.7
+
+# For elegantRL
+gym
+torch
+tensorboardX
+numpy
+matplotlib
+pybullet
+opencv-python
+box2d-py
+# For Carla
+# carla  | Need manual installation by https://github.com/carla-simulator/carla/tree/master/PythonAPI/carla
+gygame
+scikit-image
