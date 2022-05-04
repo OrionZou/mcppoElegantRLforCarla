@@ -123,9 +123,6 @@ def make_env(env_dict, id=None, seed=0):
     import gym
     import gym.envs
     import gym_carla_feature
-    import safety_env
-    import safety_gym
-    import sumo_env
     if 'params_name' in env_dict:
         if env_dict['params_name'] == 'params':
             env_dict['params_name']['params']['port'] = env_dict['params_name']['params']['port'] + id * 4
