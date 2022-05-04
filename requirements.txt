@@ -1,8 +1,8 @@
 # python3.7
 
 # For elegantRL
-gym
-torch
+gym>=0.17
+torch==1.8.0+cu111
 tensorboardX
 numpy
 matplotlib

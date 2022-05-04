@@ -6,6 +6,7 @@ import numpy.random as rd
 import random
 from copy import deepcopy
 from ray_elegantrl.net import *
+from ray_elegantrl.intrinsic_reward import IReward
 
 # from IPython import embed
 
@@ -1200,8 +1201,6 @@ class AgentPPO2(AgentPPO):
         self.cri = CriticAdv(state_dim, net_dim, self.if_use_dn).to(self.device)
         if self.if_ir:
             self.irward_module = IReward(state_dim, action_dim=action_dim)
-            # cwd="/home/zgy/repos/ray_elegantrl/veh_control_logs/carla-v2_Town07_mountainroad_s45_a2_r1_tr700_ms1000/AgentPPO2_None_clip/exp_2021-10-09-10-35-21_cuda:0_rnd_nouseIR"
-            # self.irward_module.save_load_model(cwd,False)
         if self.policy_type == 'discrete':
             self.act = ActorDiscretePPO(net_dim, state_dim, action_dim, self.if_use_dn).to(self.device)
         elif self.policy_type == 'discrete_action_dim':

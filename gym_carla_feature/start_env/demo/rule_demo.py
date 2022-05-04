@@ -204,7 +204,7 @@ def eval(args, params):
         result['delta_jerk_lat'].append(jerk_lat / i)
         result['time'].append(time_info)
     print(f'test {test_num} episode finished !!!')
-    save_path = f'/home/zgy/repos/ray_elegantrl/veh_control_logs/eval/pid'
+    save_path = f'./veh_control_logs/eval/pid'
     if not os.path.exists(save_path):
         os.mkdir(save_path)
     for k, vl in ep_info.items():

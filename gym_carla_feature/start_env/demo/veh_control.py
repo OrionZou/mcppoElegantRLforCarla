@@ -1,7 +1,4 @@
 import sys
-
-print(sys.path.append('/home/zgy/repos/ray_elegantrl'))
-
 import ray
 from ray_elegantrl.interaction import beginer
 import os
