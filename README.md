@@ -26,11 +26,11 @@ python gym_carla_feature/start_env/demo/rule_demo.py
 to test if carla is installed correctly.
 ### Training
 
-After runing carla server, you can start a quickstart shell
+After runing carla server, you can start a training with a quickstart shell
 ```
 bash ./start/carla_veh_control_run.sh
 ```
-or start with 
+, which includes PPO, MCPPO, SAC, D3QN. Or start with 
 ```
 python gym_carla_feature/start_env/demo/veh_control.py
 ```
@@ -41,6 +41,17 @@ python ray_elegantrl/demo.py
 ### Evaluation
 The tensorboard file and model file will be saved in ```./veh_control_logs```
 
+### Test
+The policy our trained is in ```./veh_control_logs/veh_control/town07-V1```.
+
+Run PID drive policy by 
+```
+python gym_carla_feature/start_env/demo/rule_demo.py
+```
+Run DRL drive policy by 
+```
+python gym_carla_feature/start_env/demo/eval_policy_carla.py
+```
 ## Citation
 <!-- ```
 @inproceedings{zou2022mcppo,

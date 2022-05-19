@@ -51,7 +51,7 @@ if __name__ == '__main__':
     args.town='Town07'
     args.task_mode='mountainroad'
     args.max_step=800
-    args.path = '/home/zgy/repos/ray_elegantrl/veh_control_logs/veh_control/town07-V1/continous/AgentPPO2_None_clip/exp_2021-12-03-21-56-07_cuda:1/model/0001871988_168.5951'
+    args.path = './veh_control_logs/veh_control/town07-V1/continous/AgentPPO2_None_clip/exp_2021-12-03-21-56-07_cuda:1/model/0001871988_168.5951'
     #
     # # args.town = 'Town07'
     # # args.task_mode = 'mountainroad'
