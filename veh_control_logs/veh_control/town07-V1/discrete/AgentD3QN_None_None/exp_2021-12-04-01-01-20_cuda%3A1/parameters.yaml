@@ -1,0 +1,89 @@
+gpu_id: 1
+cwd: ./veh_control_logs/carla-v2_Town07_mountainroad_s50_a21_r1_tr700_ms200_False/AgentD3QN_None_None/exp_2021-12-04-01-01-20_cuda:1
+random_seed: 0
+env:
+  id: carla-v2
+  state_dim: 50
+  action_dim: 21
+  action_type: -1
+  reward_dim: 1
+  target_reward: 700
+  max_step: 200
+  params_name:
+    params:
+      number_of_vehicles: 0
+      display_size: 256
+      max_past_step: 4
+      dt: 0.2
+      action_type: -1
+      discrete_acc:
+      - -1
+      - 0.0
+      - 1
+      discrete_steer:
+      - -0.6
+      - -0.3
+      - -0.1
+      - 0.0
+      - 0.1
+      - 0.3
+      - 0.6
+      continuous_accel_range: 1.0
+      continuous_steer_range: 1.0
+      ego_vehicle_filter: vehicle.lincoln*
+      port:
+      - 2300
+      - 2304
+      - 2308
+      - 2312
+      town: Town07
+      task_mode: mountainroad
+      max_step: 200
+      max_waypt: 12
+      obs_range: 32
+      lidar_bin: 0.5
+      d_behind: 12
+      out_lane_thres: 3
+      if_dest_end: false
+      reward_type: 12
+      desired_speed: 12
+      sampling_radius: 3
+      max_ego_spawn_times: 200
+      display_route: true
+      obs_space_type:
+      - orgin_state
+      - waypoint
+      render: false
+      autopilot: false
+agent:
+  net_dim: 256
+  explore_rate: 0.25
+  learning_rate: 0.0001
+  soft_update_tau: 0.00390625
+  policy_type:
+  objective_type:
+  if_rnn: false
+  if_store_state: true
+  agent_name: AgentD3QN
+trainer:
+  batch_size: 256
+  policy_reuse: 1
+  sample_step: 4000
+interactor:
+  horizon_step: 4000
+  reward_scale: 1
+  gamma: 0.99
+  rollout_num: 4
+buffer:
+  max_buf: 1048576
+  if_on_policy: false
+  if_per: false
+  if_gpu: true
+  if_discrete_action: true
+evaluator:
+  pre_eval_times: 1
+  eval_times: 2
+  eval_gap: 0
+  if_save_model: true
+  break_step: 2000000.0
+  satisfy_reward_stop: false

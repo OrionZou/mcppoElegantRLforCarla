@@ -1,4 +1,4 @@
-veh_control_logs/*
+
 .idea/*
 safety_env/*
 safety_gym/*
