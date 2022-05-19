@@ -1,5 +1,5 @@
 # mcppoElegantRLforCarla
-There is the implementation of multi-constraint proximal policy optimization (MCPPO), which is modified based on a DRL framework -- [ElegantRL](https://github.com/AI4Finance-Foundation/ElegantRL)(小雅). The carla environment is modified based on [gym-carla](https://github.com/cjy1992/gym-carla). 
+There is the implementation of multi-constraint proximal policy optimization (MCPPO), which is modified based on a DRL framework -- [ElegantRL](https://github.com/AI4Finance-Foundation/ElegantRL)(小雅). The carla environment is modified based on [gym-carla](https://github.com/cjy1992/gym-carla). Please refer to our paper for details.
 
 ![Image text](https://github.com/GyChou/mcppoElegantRLforCarla/blob/main/images/town07-part.gif)
 
