@@ -4,7 +4,7 @@ mkdir -p ./log
 
 #ppo
 reward_type=12
-nohup python gym_carla_feature/start_env/demo/veh_control.py --demo_type 'ppo2' --port 2100 --random_seed 0  --reward_type $reward_type --lambda_entropy 0.01 --ratio_clip 0.2> ./log/exp_carla_ppo_0.log &
+nohup python gym_carla_feature/start_env/demo/veh_control.py --demo_type 'ppo2' --port 2000 --random_seed 0  --reward_type $reward_type --lambda_entropy 0.01 --ratio_clip 0.2> ./log/exp_carla_ppo_0.log &
 sleep 30s
 
 #mcppo
@@ -14,12 +14,12 @@ sleep 30s
 
 #discreteppo
 #reward_type=12
-#nohup python gym_carla_feature/start_env/demo/veh_control.py --demo_type 'discreteppo2' --port 2200 --batch_size 256 --reward_type $reward_type  --lambda_entropy 0.01 --ratio_clip 0.2> ./log/exp_carla_discreteppo2_0.log &
+#nohup python gym_carla_feature/start_env/demo/veh_control.py --demo_type 'discreteppo2' --port 2000 --batch_size 256 --reward_type $reward_type  --lambda_entropy 0.01 --ratio_clip 0.2> ./log/exp_carla_discreteppo2_0.log &
 #sleep 30s
 
 #ppo2+multivariate Gaussian policy
 #reward_type=12
-#nohup python gym_carla_feature/start_env/demo/veh_control.py --demo_type 'ppo2cmaes' --port 2400  --reward_type $reward_type --lambda_entropy 0.01 --ratio_clip 0.2> ./log/exp_carla_pppo2cmaes_0.log &
+#nohup python gym_carla_feature/start_env/demo/veh_control.py --demo_type 'ppo2cmaes' --port 2000  --reward_type $reward_type --lambda_entropy 0.01 --ratio_clip 0.2> ./log/exp_carla_pppo2cmaes_0.log &
 #sleep 30s
 
 #sac

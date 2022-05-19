@@ -101,7 +101,7 @@ if __name__ == '__main__':
     # startServer(startPort=2400, num=4, gpu_id=0)
     # startServer(startPort=2300, num=4, gpu_id=3)
     # startServer(startPort=2200, num=4, gpu_id=2)
-    startServer(startPort=2100, num=4, gpu_id=3)
+    startServer(startPort=2000, num=4, gpu_id=3)
     # startServer(startPort=2000, num=4, gpu_id=2)
 
     # startServer(startPort=2016, num=2, gpu_id=2)
