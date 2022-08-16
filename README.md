@@ -53,6 +53,7 @@ Run DRL drive policy by
 python gym_carla_feature/start_env/demo/eval_policy_carla.py
 ```
 ## Citation
+```
 @inproceedings{zou2022mcppo,
   author    = {Guangyuan Zou and
                Ying He and
@@ -67,9 +68,9 @@ python gym_carla_feature/start_env/demo/eval_policy_carla.py
   pages     = {3802--3808},
   publisher = {ijcai.org},
   year      = {2022},
-  url       = {https://doi.org/10.24963/ijcai.2022/528},
-  doi       = {10.24963/ijcai.2022/528}
+  url       = {https://doi.org/10.24963/ijcai.2022/528}
 }
+```
 <!-- The arxiv link to the paper:  -->
 
 
