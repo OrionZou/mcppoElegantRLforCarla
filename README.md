@@ -53,14 +53,23 @@ Run DRL drive policy by
 python gym_carla_feature/start_env/demo/eval_policy_carla.py
 ```
 ## Citation
-<!-- ```
 @inproceedings{zou2022mcppo,
- title={Multi-Constraint Deep Reinforcement Learning for Smooth Action Control},
- author={Guangyuan Zou, Ying He, F. Richard Yu, Longquan Chen, Longquan Chen, Weike Pan, Zhong Ming},
- booktitle={the 31st International Joint Conference on Artificial Intelligence (IJCAI2022)},
+  author    = {Guangyuan Zou and
+               Ying He and
+               F. Richard Yu and
+               Longquan Chen and
+               Weike Pan and
+               Zhong Ming},
+  title     = {Multi-Constraint Deep Reinforcement Learning for Smooth Action Control},
+  booktitle = {Proceedings of the Thirty-First International Joint Conference on
+               Artificial Intelligence, {IJCAI} 2022, Vienna, Austria, 23-29 July
+               2022},
+  pages     = {3802--3808},
+  publisher = {ijcai.org},
+  year      = {2022},
+  url       = {https://doi.org/10.24963/ijcai.2022/528},
+  doi       = {10.24963/ijcai.2022/528}
 }
-``` -->
- Waiting update
 <!-- The arxiv link to the paper:  -->
 
 
